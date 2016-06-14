@@ -1,0 +1,309 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9E4DACD51D0FFD7600E6E17F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E4DACD41D0FFD7600E6E17F /* main.m */; };
+		9E4DACD81D0FFD7600E6E17F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E4DACD71D0FFD7600E6E17F /* AppDelegate.m */; };
+		9E4DACDB1D0FFD7600E6E17F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E4DACDA1D0FFD7600E6E17F /* ViewController.m */; };
+		9E4DACDE1D0FFD7600E6E17F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E4DACDC1D0FFD7600E6E17F /* Main.storyboard */; };
+		9E4DACE01D0FFD7600E6E17F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E4DACDF1D0FFD7600E6E17F /* Assets.xcassets */; };
+		9E4DACE31D0FFD7600E6E17F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E4DACE11D0FFD7600E6E17F /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9E4DACD01D0FFD7600E6E17F /* AirPlayExternalWindow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirPlayExternalWindow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E4DACD41D0FFD7600E6E17F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9E4DACD61D0FFD7600E6E17F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9E4DACD71D0FFD7600E6E17F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9E4DACD91D0FFD7600E6E17F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9E4DACDA1D0FFD7600E6E17F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9E4DACDD1D0FFD7600E6E17F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9E4DACDF1D0FFD7600E6E17F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9E4DACE21D0FFD7600E6E17F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9E4DACE41D0FFD7600E6E17F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9E4DACCD1D0FFD7600E6E17F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9E4DACC71D0FFD7600E6E17F = {
+			isa = PBXGroup;
+			children = (
+				9E4DACD21D0FFD7600E6E17F /* AirPlayExternalWindow */,
+				9E4DACD11D0FFD7600E6E17F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9E4DACD11D0FFD7600E6E17F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9E4DACD01D0FFD7600E6E17F /* AirPlayExternalWindow.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9E4DACD21D0FFD7600E6E17F /* AirPlayExternalWindow */ = {
+			isa = PBXGroup;
+			children = (
+				9E4DACD61D0FFD7600E6E17F /* AppDelegate.h */,
+				9E4DACD71D0FFD7600E6E17F /* AppDelegate.m */,
+				9E4DACD91D0FFD7600E6E17F /* ViewController.h */,
+				9E4DACDA1D0FFD7600E6E17F /* ViewController.m */,
+				9E4DACDC1D0FFD7600E6E17F /* Main.storyboard */,
+				9E4DACDF1D0FFD7600E6E17F /* Assets.xcassets */,
+				9E4DACE11D0FFD7600E6E17F /* LaunchScreen.storyboard */,
+				9E4DACE41D0FFD7600E6E17F /* Info.plist */,
+				9E4DACD31D0FFD7600E6E17F /* Supporting Files */,
+			);
+			path = AirPlayExternalWindow;
+			sourceTree = "<group>";
+		};
+		9E4DACD31D0FFD7600E6E17F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9E4DACD41D0FFD7600E6E17F /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9E4DACCF1D0FFD7600E6E17F /* AirPlayExternalWindow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9E4DACE71D0FFD7600E6E17F /* Build configuration list for PBXNativeTarget "AirPlayExternalWindow" */;
+			buildPhases = (
+				9E4DACCC1D0FFD7600E6E17F /* Sources */,
+				9E4DACCD1D0FFD7600E6E17F /* Frameworks */,
+				9E4DACCE1D0FFD7600E6E17F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AirPlayExternalWindow;
+			productName = AirPlayExternalWindow;
+			productReference = 9E4DACD01D0FFD7600E6E17F /* AirPlayExternalWindow.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9E4DACC81D0FFD7600E6E17F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Dipak;
+				TargetAttributes = {
+					9E4DACCF1D0FFD7600E6E17F = {
+						CreatedOnToolsVersion = 7.3;
+					};
+				};
+			};
+			buildConfigurationList = 9E4DACCB1D0FFD7600E6E17F /* Build configuration list for PBXProject "AirPlayExternalWindow" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9E4DACC71D0FFD7600E6E17F;
+			productRefGroup = 9E4DACD11D0FFD7600E6E17F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9E4DACCF1D0FFD7600E6E17F /* AirPlayExternalWindow */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9E4DACCE1D0FFD7600E6E17F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E4DACE31D0FFD7600E6E17F /* LaunchScreen.storyboard in Resources */,
+				9E4DACE01D0FFD7600E6E17F /* Assets.xcassets in Resources */,
+				9E4DACDE1D0FFD7600E6E17F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9E4DACCC1D0FFD7600E6E17F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9E4DACDB1D0FFD7600E6E17F /* ViewController.m in Sources */,
+				9E4DACD81D0FFD7600E6E17F /* AppDelegate.m in Sources */,
+				9E4DACD51D0FFD7600E6E17F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9E4DACDC1D0FFD7600E6E17F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E4DACDD1D0FFD7600E6E17F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9E4DACE11D0FFD7600E6E17F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9E4DACE21D0FFD7600E6E17F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9E4DACE51D0FFD7600E6E17F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9E4DACE61D0FFD7600E6E17F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9E4DACE81D0FFD7600E6E17F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AirPlayExternalWindow/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pft.AirPlayExternalWindow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9E4DACE91D0FFD7600E6E17F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = AirPlayExternalWindow/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.pft.AirPlayExternalWindow;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9E4DACCB1D0FFD7600E6E17F /* Build configuration list for PBXProject "AirPlayExternalWindow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E4DACE51D0FFD7600E6E17F /* Debug */,
+				9E4DACE61D0FFD7600E6E17F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9E4DACE71D0FFD7600E6E17F /* Build configuration list for PBXNativeTarget "AirPlayExternalWindow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E4DACE81D0FFD7600E6E17F /* Debug */,
+				9E4DACE91D0FFD7600E6E17F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9E4DACC81D0FFD7600E6E17F /* Project object */;
+}
