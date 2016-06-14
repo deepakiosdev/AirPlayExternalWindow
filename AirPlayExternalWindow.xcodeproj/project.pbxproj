@@ -13,6 +13,7 @@
 		9E4DACDE1D0FFD7600E6E17F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E4DACDC1D0FFD7600E6E17F /* Main.storyboard */; };
 		9E4DACE01D0FFD7600E6E17F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E4DACDF1D0FFD7600E6E17F /* Assets.xcassets */; };
 		9E4DACE31D0FFD7600E6E17F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E4DACE11D0FFD7600E6E17F /* LaunchScreen.storyboard */; };
+		9E4DACF21D10011200E6E17F /* AirPlayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E4DACF11D10011200E6E17F /* AirPlayVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		9E4DACDF1D0FFD7600E6E17F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9E4DACE21D0FFD7600E6E17F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9E4DACE41D0FFD7600E6E17F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9E4DACF01D10011200E6E17F /* AirPlayVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AirPlayVC.h; sourceTree = "<group>"; };
+		9E4DACF11D10011200E6E17F /* AirPlayVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AirPlayVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +70,8 @@
 				9E4DACE11D0FFD7600E6E17F /* LaunchScreen.storyboard */,
 				9E4DACE41D0FFD7600E6E17F /* Info.plist */,
 				9E4DACD31D0FFD7600E6E17F /* Supporting Files */,
+				9E4DACF01D10011200E6E17F /* AirPlayVC.h */,
+				9E4DACF11D10011200E6E17F /* AirPlayVC.m */,
 			);
 			path = AirPlayExternalWindow;
 			sourceTree = "<group>";
@@ -150,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9E4DACDB1D0FFD7600E6E17F /* ViewController.m in Sources */,
+				9E4DACF21D10011200E6E17F /* AirPlayVC.m in Sources */,
 				9E4DACD81D0FFD7600E6E17F /* AppDelegate.m in Sources */,
 				9E4DACD51D0FFD7600E6E17F /* main.m in Sources */,
 			);
@@ -266,6 +272,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AirPlayExternalWindow/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pft.AirPlayExternalWindow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -277,6 +284,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = AirPlayExternalWindow/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.pft.AirPlayExternalWindow;
 				PRODUCT_NAME = "$(TARGET_NAME)";
