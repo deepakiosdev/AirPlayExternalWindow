@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15D21" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="goL-bX-ns8">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="goL-bX-ns8">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,15 +17,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CAH-6K-iBm">
-                                <rect key="frame" x="238" y="285" width="124" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AkG-4c-5Sn">
+                                <rect key="frame" x="150" y="323" width="300" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="7eE-R2-oe6"/>
-                                    <constraint firstAttribute="width" constant="124" id="ylO-P9-pfA"/>
+                                    <constraint firstAttribute="height" constant="30" id="jOl-zi-rYO"/>
+                                    <constraint firstAttribute="width" constant="300" id="m2b-S8-BG8"/>
                                 </constraints>
-                                <state key="normal" title="Play AirPlay Video"/>
+                                <state key="normal" title="Play AirPlay Video -Demo 2"/>
                                 <connections>
-                                    <segue destination="s2R-kI-CTo" kind="show" id="IeN-s5-URT"/>
+                                    <segue destination="yYW-dZ-LcM" kind="show" id="ecs-lE-drQ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="beG-7V-CS9">
@@ -39,10 +39,23 @@
                                     <segue destination="PZ6-oj-MTT" kind="show" id="LFF-Bk-CVD"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CAH-6K-iBm">
+                                <rect key="frame" x="150" y="285" width="300" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="7eE-R2-oe6"/>
+                                    <constraint firstAttribute="width" constant="300" id="ylO-P9-pfA"/>
+                                </constraints>
+                                <state key="normal" title="Play AirPlay Video -Demo 1"/>
+                                <connections>
+                                    <segue destination="s2R-kI-CTo" kind="show" id="IeN-s5-URT"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="CAH-6K-iBm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="06J-e4-ADG"/>
+                            <constraint firstItem="AkG-4c-5Sn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="C9R-gw-S97"/>
+                            <constraint firstItem="AkG-4c-5Sn" firstAttribute="top" secondItem="CAH-6K-iBm" secondAttribute="bottom" constant="8" id="LAO-PI-Wfp"/>
                             <constraint firstItem="CAH-6K-iBm" firstAttribute="top" secondItem="beG-7V-CS9" secondAttribute="bottom" constant="13" id="W5g-jg-DmM"/>
                             <constraint firstItem="CAH-6K-iBm" firstAttribute="top" secondItem="beG-7V-CS9" secondAttribute="bottom" constant="13" id="Yy3-DG-bfI"/>
                             <constraint firstItem="CAH-6K-iBm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fIt-jo-vW7"/>
@@ -192,7 +205,66 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x6A-It-87h" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="806" y="1710"/>
+            <point key="canvasLocation" x="1021" y="1703"/>
+        </scene>
+        <!--Queue PlayerVC-->
+        <scene sceneID="vaT-Zv-gHq">
+            <objects>
+                <viewController id="yYW-dZ-LcM" customClass="AVQueuePlayerVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="BAn-80-tSl"/>
+                        <viewControllerLayoutGuide type="bottom" id="QE2-6r-hA0"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yLB-h5-pAo">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KGW-40-7wg">
+                                <rect key="frame" x="0.0" y="64" width="600" height="430"/>
+                                <subviews>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connected to AirPlay" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qbc-f2-KDZ" userLabel="Coneected To AirPlay">
+                                        <rect key="frame" x="197" y="205" width="205" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="hRc-Bi-AgN"/>
+                                            <constraint firstAttribute="width" constant="205" id="iqq-uw-vD5"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Z0I-OY-2U1" customClass="QueuePlayerView">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="430"/>
+                                        <color key="backgroundColor" red="1" green="0.97471537732935232" blue="0.40195212224524091" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.16247690610000001" blue="0.1175730005" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Z0I-OY-2U1" firstAttribute="leading" secondItem="KGW-40-7wg" secondAttribute="leading" id="0LD-8b-qxl"/>
+                                    <constraint firstItem="qbc-f2-KDZ" firstAttribute="centerY" secondItem="KGW-40-7wg" secondAttribute="centerY" id="AUW-rc-JLt"/>
+                                    <constraint firstAttribute="bottom" secondItem="Z0I-OY-2U1" secondAttribute="bottom" id="FAG-fq-W5p"/>
+                                    <constraint firstItem="Z0I-OY-2U1" firstAttribute="top" secondItem="KGW-40-7wg" secondAttribute="top" id="PNj-DH-nxA"/>
+                                    <constraint firstItem="qbc-f2-KDZ" firstAttribute="centerX" secondItem="KGW-40-7wg" secondAttribute="centerX" id="Pcm-fY-hPh"/>
+                                    <constraint firstAttribute="trailing" secondItem="Z0I-OY-2U1" secondAttribute="trailing" id="Yc3-xQ-Tj9"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="QE2-6r-hA0" firstAttribute="top" secondItem="KGW-40-7wg" secondAttribute="bottom" constant="106" id="6Bg-fG-d2J"/>
+                            <constraint firstAttribute="trailing" secondItem="KGW-40-7wg" secondAttribute="trailing" id="TMC-qh-OPe"/>
+                            <constraint firstItem="KGW-40-7wg" firstAttribute="leading" secondItem="yLB-h5-pAo" secondAttribute="leading" id="qIn-bg-gpE"/>
+                            <constraint firstItem="KGW-40-7wg" firstAttribute="top" secondItem="BAn-80-tSl" secondAttribute="bottom" id="qXR-3X-X6f"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="connectedLabel" destination="qbc-f2-KDZ" id="nEU-1g-Ud4"/>
+                        <outlet property="containerView" destination="KGW-40-7wg" id="vUy-Xt-tXI"/>
+                        <outlet property="playerView" destination="Z0I-OY-2U1" id="CXI-dI-Qp1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wv6-jL-VUh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="386" y="1710"/>
         </scene>
     </scenes>
 </document>

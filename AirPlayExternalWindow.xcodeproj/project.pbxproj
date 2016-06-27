@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		00C412041D21A10300EDE457 /* QueuePlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C412031D21A10300EDE457 /* QueuePlayerView.m */; };
+		00C4120A1D21AA5A00EDE457 /* AVQueuePlayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C412091D21AA5A00EDE457 /* AVQueuePlayerVC.m */; };
 		9E4DACD51D0FFD7600E6E17F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E4DACD41D0FFD7600E6E17F /* main.m */; };
 		9E4DACD81D0FFD7600E6E17F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E4DACD71D0FFD7600E6E17F /* AppDelegate.m */; };
 		9E4DACDB1D0FFD7600E6E17F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E4DACDA1D0FFD7600E6E17F /* ViewController.m */; };
@@ -19,6 +21,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		00C412021D21A10300EDE457 /* QueuePlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueuePlayerView.h; sourceTree = "<group>"; };
+		00C412031D21A10300EDE457 /* QueuePlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QueuePlayerView.m; sourceTree = "<group>"; };
+		00C412081D21AA5A00EDE457 /* AVQueuePlayerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVQueuePlayerVC.h; sourceTree = "<group>"; };
+		00C412091D21AA5A00EDE457 /* AVQueuePlayerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVQueuePlayerVC.m; sourceTree = "<group>"; };
 		9E4DACD01D0FFD7600E6E17F /* AirPlayExternalWindow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AirPlayExternalWindow.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E4DACD41D0FFD7600E6E17F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9E4DACD61D0FFD7600E6E17F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -82,6 +88,10 @@
 				9E4DACF11D10011200E6E17F /* AirPlayVC.m */,
 				9E4DACF31D1020DF00E6E17F /* AVPlayerVC.h */,
 				9E4DACF41D1020DF00E6E17F /* AVPlayerVC.m */,
+				00C412021D21A10300EDE457 /* QueuePlayerView.h */,
+				00C412031D21A10300EDE457 /* QueuePlayerView.m */,
+				00C412081D21AA5A00EDE457 /* AVQueuePlayerVC.h */,
+				00C412091D21AA5A00EDE457 /* AVQueuePlayerVC.m */,
 			);
 			path = AirPlayExternalWindow;
 			sourceTree = "<group>";
@@ -164,11 +174,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				00C412041D21A10300EDE457 /* QueuePlayerView.m in Sources */,
 				9E4DACDB1D0FFD7600E6E17F /* ViewController.m in Sources */,
 				9E4DACF21D10011200E6E17F /* AirPlayVC.m in Sources */,
 				9E4DACF81D102EEB00E6E17F /* AVPlayerDemoPlaybackView.m in Sources */,
 				9E4DACD81D0FFD7600E6E17F /* AppDelegate.m in Sources */,
 				9E4DACD51D0FFD7600E6E17F /* main.m in Sources */,
+				00C4120A1D21AA5A00EDE457 /* AVQueuePlayerVC.m in Sources */,
 				9E4DACF51D1020DF00E6E17F /* AVPlayerVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +295,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = AirPlayExternalWindow/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -295,6 +308,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = AirPlayExternalWindow/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
