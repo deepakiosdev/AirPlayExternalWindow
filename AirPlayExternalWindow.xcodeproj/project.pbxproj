@@ -14,6 +14,8 @@
 		9E4DACE01D0FFD7600E6E17F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9E4DACDF1D0FFD7600E6E17F /* Assets.xcassets */; };
 		9E4DACE31D0FFD7600E6E17F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9E4DACE11D0FFD7600E6E17F /* LaunchScreen.storyboard */; };
 		9E4DACF21D10011200E6E17F /* AirPlayVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E4DACF11D10011200E6E17F /* AirPlayVC.m */; };
+		9E4DACF51D1020DF00E6E17F /* AVPlayerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E4DACF41D1020DF00E6E17F /* AVPlayerVC.m */; };
+		9E4DACF81D102EEB00E6E17F /* AVPlayerDemoPlaybackView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9E4DACF71D102EEB00E6E17F /* AVPlayerDemoPlaybackView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,10 @@
 		9E4DACE41D0FFD7600E6E17F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9E4DACF01D10011200E6E17F /* AirPlayVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AirPlayVC.h; sourceTree = "<group>"; };
 		9E4DACF11D10011200E6E17F /* AirPlayVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AirPlayVC.m; sourceTree = "<group>"; };
+		9E4DACF31D1020DF00E6E17F /* AVPlayerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVPlayerVC.h; sourceTree = "<group>"; };
+		9E4DACF41D1020DF00E6E17F /* AVPlayerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVPlayerVC.m; sourceTree = "<group>"; };
+		9E4DACF61D102EEB00E6E17F /* AVPlayerDemoPlaybackView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AVPlayerDemoPlaybackView.h; sourceTree = "<group>"; };
+		9E4DACF71D102EEB00E6E17F /* AVPlayerDemoPlaybackView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AVPlayerDemoPlaybackView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +67,8 @@
 		9E4DACD21D0FFD7600E6E17F /* AirPlayExternalWindow */ = {
 			isa = PBXGroup;
 			children = (
+				9E4DACF61D102EEB00E6E17F /* AVPlayerDemoPlaybackView.h */,
+				9E4DACF71D102EEB00E6E17F /* AVPlayerDemoPlaybackView.m */,
 				9E4DACD61D0FFD7600E6E17F /* AppDelegate.h */,
 				9E4DACD71D0FFD7600E6E17F /* AppDelegate.m */,
 				9E4DACD91D0FFD7600E6E17F /* ViewController.h */,
@@ -72,6 +80,8 @@
 				9E4DACD31D0FFD7600E6E17F /* Supporting Files */,
 				9E4DACF01D10011200E6E17F /* AirPlayVC.h */,
 				9E4DACF11D10011200E6E17F /* AirPlayVC.m */,
+				9E4DACF31D1020DF00E6E17F /* AVPlayerVC.h */,
+				9E4DACF41D1020DF00E6E17F /* AVPlayerVC.m */,
 			);
 			path = AirPlayExternalWindow;
 			sourceTree = "<group>";
@@ -156,8 +166,10 @@
 			files = (
 				9E4DACDB1D0FFD7600E6E17F /* ViewController.m in Sources */,
 				9E4DACF21D10011200E6E17F /* AirPlayVC.m in Sources */,
+				9E4DACF81D102EEB00E6E17F /* AVPlayerDemoPlaybackView.m in Sources */,
 				9E4DACD81D0FFD7600E6E17F /* AppDelegate.m in Sources */,
 				9E4DACD51D0FFD7600E6E17F /* main.m in Sources */,
+				9E4DACF51D1020DF00E6E17F /* AVPlayerVC.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,6 +322,7 @@
 				9E4DACE91D0FFD7600E6E17F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

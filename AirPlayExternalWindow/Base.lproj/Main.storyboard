@@ -17,11 +17,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="beG-7V-CS9">
-                                <rect key="frame" x="235" y="285" width="130" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CAH-6K-iBm">
+                                <rect key="frame" x="238" y="285" width="124" height="30"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="130" id="EVn-Sm-MGQ"/>
-                                    <constraint firstAttribute="height" constant="30" id="xXC-Xg-sCP"/>
+                                    <constraint firstAttribute="height" constant="30" id="7eE-R2-oe6"/>
+                                    <constraint firstAttribute="width" constant="124" id="ylO-P9-pfA"/>
+                                </constraints>
+                                <state key="normal" title="Play AirPlay Video"/>
+                                <connections>
+                                    <segue destination="s2R-kI-CTo" kind="show" id="IeN-s5-URT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="beG-7V-CS9">
+                                <rect key="frame" x="235" y="242" width="130" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="9Se-75-Ny7"/>
+                                    <constraint firstAttribute="width" constant="130" id="F4O-Oh-6I2"/>
                                 </constraints>
                                 <state key="normal" title="Connect To Airplay"/>
                                 <connections>
@@ -31,15 +42,18 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="beG-7V-CS9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Zdu-Rn-ecn"/>
-                            <constraint firstItem="beG-7V-CS9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jPM-oq-sa3"/>
+                            <constraint firstItem="CAH-6K-iBm" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="06J-e4-ADG"/>
+                            <constraint firstItem="CAH-6K-iBm" firstAttribute="top" secondItem="beG-7V-CS9" secondAttribute="bottom" constant="13" id="W5g-jg-DmM"/>
+                            <constraint firstItem="CAH-6K-iBm" firstAttribute="top" secondItem="beG-7V-CS9" secondAttribute="bottom" constant="13" id="Yy3-DG-bfI"/>
+                            <constraint firstItem="CAH-6K-iBm" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fIt-jo-vW7"/>
+                            <constraint firstItem="beG-7V-CS9" firstAttribute="centerX" secondItem="CAH-6K-iBm" secondAttribute="centerX" id="gfT-za-oT9"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="72M-Ra-VKr"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="894" y="937"/>
+            <point key="canvasLocation" x="806" y="931"/>
         </scene>
         <!--Air PlayVC-->
         <scene sceneID="Hcb-FB-RDj">
@@ -66,7 +80,7 @@
                                                     <constraint firstAttribute="width" constant="88" id="gsI-Qp-dzv"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
@@ -120,6 +134,65 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qer-d5-W2g" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="101" y="937"/>
+        </scene>
+        <!--PlayerVC-->
+        <scene sceneID="KlY-Ql-xcA">
+            <objects>
+                <viewController id="s2R-kI-CTo" customClass="AVPlayerVC" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dzV-OM-tbP"/>
+                        <viewControllerLayoutGuide type="bottom" id="PT7-vk-bZW"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ceh-vg-ZDq">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2z8-F8-Npi">
+                                <rect key="frame" x="0.0" y="64" width="600" height="430"/>
+                                <subviews>
+                                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connected to AirPlay" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="btx-5Y-C07" userLabel="Coneected To AirPlay">
+                                        <rect key="frame" x="197" y="205" width="205" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="205" id="cZU-0c-Txb"/>
+                                            <constraint firstAttribute="height" constant="21" id="t0r-GP-QxZ"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hiy-nr-oiu" customClass="AVPlayerDemoPlaybackView">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="430"/>
+                                        <color key="backgroundColor" red="0.46298608629999999" green="1" blue="0.52341436880000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.16247690610000001" blue="0.1175730005" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="hiy-nr-oiu" secondAttribute="trailing" id="0um-1J-Tuf"/>
+                                    <constraint firstItem="btx-5Y-C07" firstAttribute="centerX" secondItem="2z8-F8-Npi" secondAttribute="centerX" id="28P-G1-9O5"/>
+                                    <constraint firstItem="hiy-nr-oiu" firstAttribute="leading" secondItem="2z8-F8-Npi" secondAttribute="leading" id="7Y4-25-fh2"/>
+                                    <constraint firstAttribute="bottom" secondItem="hiy-nr-oiu" secondAttribute="bottom" id="CpF-2o-iq4"/>
+                                    <constraint firstItem="btx-5Y-C07" firstAttribute="centerY" secondItem="2z8-F8-Npi" secondAttribute="centerY" id="Ob9-p8-qyZ"/>
+                                    <constraint firstItem="hiy-nr-oiu" firstAttribute="top" secondItem="2z8-F8-Npi" secondAttribute="top" id="YJd-db-HNX"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="2z8-F8-Npi" secondAttribute="trailing" id="Efa-aW-i6L"/>
+                            <constraint firstItem="2z8-F8-Npi" firstAttribute="top" secondItem="dzV-OM-tbP" secondAttribute="bottom" id="cNJ-au-c1i"/>
+                            <constraint firstItem="2z8-F8-Npi" firstAttribute="leading" secondItem="ceh-vg-ZDq" secondAttribute="leading" id="pN1-Ml-W3C"/>
+                            <constraint firstItem="PT7-vk-bZW" firstAttribute="top" secondItem="2z8-F8-Npi" secondAttribute="bottom" constant="106" id="s6c-K3-b5S"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="connectedLabel" destination="btx-5Y-C07" id="tGb-jY-xkw"/>
+                        <outlet property="containerView" destination="2z8-F8-Npi" id="VwR-9J-WXs"/>
+                        <outlet property="playerView" destination="hiy-nr-oiu" id="5wN-QC-jA2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x6A-It-87h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="806" y="1710"/>
         </scene>
     </scenes>
 </document>
